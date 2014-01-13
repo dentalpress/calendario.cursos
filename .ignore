@@ -1,4 +1,7 @@
-.ignore
+#    Pastas matiz    #
+######################
+_src/
+
 # OS generated files #
 ######################
 .DS_Store
