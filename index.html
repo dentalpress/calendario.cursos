@@ -25,6 +25,201 @@
 
         <!-- <div class="date"></div> -->
 
+        <!-- inicio do data "chamada da datepicker" -->
+        <div class="date">
+
+            <!-- inicio datepicker -->
+            <div class="datepicker datepicker-inline">
+
+                <!-- inicio da tabela por dia -->
+                <div class="datepicker-days" style="display: block;">
+                    <table class=" table-condensed">
+                        <!-- Dia da semana mês e ano -->
+                        <thead>
+                            <tr>
+                                <th class="prev" style="visibility: visible;">«</th>
+                                <th colspan="5" class="datepicker-switch">Janeiro 2014</th>
+                                <th class="next" style="visibility: visible;">»</th>
+                            </tr>
+                            <tr>
+                                <th class="dow">Se</th>
+                                <th class="dow">Te</th>
+                                <th class="dow">Qu</th>
+                                <th class="dow">Qu</th>
+                                <th class="dow">Se</th>
+                                <th class="dow">Sa</th>
+                                <th class="dow">Do</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Dias -->
+                        <tbody>
+                            <tr>
+                                <td data-day="30-0-2014" class="day old">30</td>
+                                <td data-day="31-0-2014" class="day old">31</td>
+                                <td data-day="1-0-2014" class="day">1</td>
+                                <td data-day="2-0-2014" class="day">2</td>
+                                <td data-day="3-0-2014" class="day">3</td>
+                                <td data-day="4-0-2014" class="day">4</td>
+                                <td data-day="5-0-2014" class="day disabled">5</td>
+                            </tr>
+                            <tr>
+                                <td data-day="6-0-2014" class="day">6</td>
+                                <td data-day="7-0-2014" class="day">7</td>
+                                <td data-day="8-0-2014" class="day">8</td>
+                                <td data-day="9-0-2014" class="day">9</td>
+                                <td data-day="10-0-2014" class="day">10</td>
+                                <td data-day="11-0-2014" class="day">11</td>
+                                <td data-day="12-0-2014" class="day disabled">12</td>
+                            </tr>
+                            <tr>
+                                <td data-day="13-0-2014" class="day">13</td>
+                                <td data-day="14-0-2014" class="day">14</td>
+                                <td data-day="15-0-2014" class="day active">15</td>
+                                <td data-day="16-0-2014" class="day">16</td>
+                                <td data-day="17-0-2014" class="day">17</td>
+                                <td data-day="18-0-2014" class="day">18</td>
+                                <td data-day="19-0-2014" class="day disabled">19</td>
+                            </tr>
+                            <tr>
+                                <td data-day="20-0-2014" class="day">20</td>
+                                <td data-day="21-0-2014" class="day">21</td>
+                                <td data-day="22-0-2014" class="day">22</td>
+                                <td data-day="23-0-2014" class="day">23</td>
+                                <td data-day="24-0-2014" class="day">24</td>
+                                <td data-day="25-0-2014" class="day">25</td>
+                                <td data-day="26-0-2014" class="day disabled">26</td>
+                            </tr>
+                            <tr>
+                                <td data-day="27-0-2014" class="day">27</td>
+                                <td data-day="28-0-2014" class="day">28</td>
+                                <td data-day="29-0-2014" class="day">29</td>
+                                <td data-day="30-0-2014" class="day">30</td>
+                                <td data-day="31-0-2014" class="day">31</td>
+                                <td data-day="1-0-2014" class="day new">1</td>
+                                <td data-day="2-0-2014" class="day disabled new">2</td>
+                            </tr>
+                            <tr>
+                                <td data-day="3-0-2014" class="day new">3</td>
+                                <td data-day="4-0-2014" class="day new">4</td>
+                                <td data-day="5-0-2014" class="day new">5</td>
+                                <td data-day="6-0-2014" class="day new">6</td>
+                                <td data-day="7-0-2014" class="day new">7</td>
+                                <td data-day="8-0-2014" class="day new">8</td>
+                                <td data-day="9-0-2014" class="day disabled new">9</td>
+                            </tr>
+                        </tbody>
+
+                        <!-- Hoje e limpar -->
+                        <tfoot>
+                            <tr>
+                                <th colspan="7" class="today" style="display: none;">Hoje</th>
+                            </tr>
+                            <tr>
+                                <th colspan="7" class="clear" style="display: none;">Limpar</th>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+                <!-- final da tabela por dia -->
+
+                <!-- inicio da tabela por mes -->
+                <div class="datepicker-months" style="display: none;">
+                    <table class="table-condensed">
+                        <!-- Navegação por ano -->
+                        <thead>
+                            <tr>
+                                <th class="prev" style="visibility: visible;">«</th>
+                                <th colspan="5" class="datepicker-switch">2014</th>
+                                <th class="next" style="visibility: visible;">»</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Meses -->
+                        <tbody>
+                            <tr>
+                                <td colspan="7">
+                                    <span class="month active">Jan</span>
+                                    <span class="month">Fev</span>
+                                    <span class="month">Mar</span>
+                                    <span class="month">Abr</span>
+                                    <span class="month">Mai</span>
+                                    <span class="month">Jun</span>
+                                    <span class="month">Jul</span>
+                                    <span class="month">Ago</span>
+                                    <span class="month">Set</span>
+                                    <span class="month">Out</span>
+                                    <span class="month">Nov</span>
+                                    <span class="month">Dez</span>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <!-- Hoje e limpar -->
+                        <tfoot>
+                            <tr>
+                                <th colspan="7" class="today" style="display: none;">Hoje</th>
+                            </tr>
+                            <tr>
+                                <th colspan="7" class="clear" style="display: none;">Limpar</th>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+                <!-- fim da tabela por mes -->
+
+                <!-- inicio da tabela por ano -->
+                <div class="datepicker-years" style="display: none;">
+                    <table class="table-condensed">
+                        <!-- Navegação por decada -->
+                        <thead>
+                            <tr>
+                                <th class="prev" style="visibility: visible;">«</th>
+                                <th colspan="5" class="datepicker-switch">2010-2019</th>
+                                <th class="next" style="visibility: visible;">»</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Anos -->
+                        <tbody>
+                            <tr>
+                                <td colspan="7">
+                                    <span class="year old">2009</span>
+                                    <span class="year">2010</span>
+                                    <span class="year">2011</span>
+                                    <span class="year">2012</span>
+                                    <span class="year">2013</span>
+                                    <span class="year active">2014</span>
+                                    <span class="year">2015</span>
+                                    <span class="year">2016</span>
+                                    <span class="year">2017</span>
+                                    <span class="year">2018</span>
+                                    <span class="year">2019</span>
+                                    <span class="year new">2020</span>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <!-- Hoje e limpar -->
+                        <tfoot>
+                            <tr>
+                                <th colspan="7" class="today" style="display: none;">Hoje</th>
+                            </tr>
+                            <tr>
+                                <th colspan="7" class="clear" style="display: none;">Limpar</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- fim da tabela por ano -->
+
+            </div>
+            <!-- fim datepicker -->
+
+        </div>
+        <!-- fim do data "chamada da datepicker" -->
 
         <!-- jQuerys Plugin -->
         <script src="assets/vendor/jquery/jquery.min.js"></script>
