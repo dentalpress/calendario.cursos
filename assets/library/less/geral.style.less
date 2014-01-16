@@ -9,14 +9,56 @@
 // tabela de datas
 .datepicker-days{
 
-	// tabela <table>
-	.table-condensed{
+    // tabela <table>
+    .table-condensed{
+        min-width: 100%;
+        display: block;
 
-		// Dia da semana, mês e ano
-		thead{
-			// navegação mês
-			tr:first-child{ display:none; border:1px solid red}
-		}
-	}
+        // Dia da semana, mês e ano
+        thead{
+            display: block;
+
+            // navegação mês
+            tr:first-child{ display:none; border:1px solid red}
+
+            // coluna de nome da semana
+            tr{
+                .clear-box-float();
+                width: 100%;
+                display: block;
+
+                // nomes dos dias da semana
+                th{
+                    width: 14.28%;
+                    float: left;
+                    display: inline-block;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        //Dia do mes
+        tbody{
+            display: block;
+            .clear-box-float();
+
+            // Linha da semana
+            tr{
+                .clear-box-float();
+                width: 100%;
+                display: none;
+
+                // Dia da semana
+                td{
+                    width: 14.28%;
+                    float: left;
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
 
 }
