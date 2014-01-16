@@ -52,7 +52,7 @@
 
 
         <!-- inicio grupo da selação -->
-        <div class="well">
+        <div class="well clear-box-float">
 
             <!-- dia selecionado -->
             <div class="grupo-dia pull-left">
@@ -61,15 +61,238 @@
                 <h3 class="ano">Janeiro - 2014</h3>
             </div>
 
-            <!-- evento do dia selecionado -->
-            <div class="grupo-evento">
+            <!-- inicio evento do dia selecionado -->
+            <div class="grupo-evento pull-right" style="width:800px">
+
                 <!-- Menu de periodos -->
-                <ul class="nav nav-tabs periodos">
-                    <li class="active">Manhã <span class="periodo">06:00 - 12:00</span></li>
-                    <li class="active">Tarde <span class="periodo">12:00 - 18:00</span></li>
-                    <li class="active">Noite <span class="periodo">18:00 - 24:00</span></li>
+                <ul class="nav nav-tabs periodo-menu">
+                    <li class="active"><a href="#manha">Manhã <span class="periodo">06:00 - 12:00</span></a></li>
+                    <li><a href="#tarde">Tarde <span class="periodo">12:00 - 18:00</span></a></li>
+                    <li><a href="#noite">Noite <span class="periodo">18:00 - 24:00</span></a></li>
                 </ul>
+
+                <!-- inicio eventos -->
+                <div class="eventos">
+
+                    <!-- inicio evento da manha -->
+                    <ul class="periodo-list manha">
+
+                        <!-- inicio lista temporal -->
+                       <li class="periodo-list-tempo">
+
+                            <!-- marcador de hora -->
+                            <span class="etiqueta-tempo">08:00</span>
+
+                            <!-- eventos nesta hora -->
+                            <ul class="event-list">
+
+                                <!-- lista de evento -->
+                                <li class="event-list-item">
+
+                                    <!-- marcador do evento -->
+                                    <div class="event-marca row">
+                                        <p class="local auditorio col-md-2 label label-default">Auditorio</p>
+                                        <p class="col-md-9">Farmacologia Clinica para Cirurgiões-Dentistas</p>
+                                        <p class="col-md-1 btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></p>
+                                    </div>
+
+                                    <!-- fim Evento detalhado -->
+                                    <ul class="event-detalhado">
+
+                                        <!-- inicio separador por tempo -->
+                                        <li class="periodo-list-tempo">
+
+                                            <!-- marcador de hora -->
+                                           <span class="etiqueta-tempo">08:00 as 09:10</span>
+
+                                           <!-- inicio marcador do detalhe o evento -->
+                                            <div class="event-marca row">
+                                                <span class="col-md-2 glyphicon glyphicon-chevron-right"></span>
+
+                                                <!-- informação -->
+                                                <p class="col-md-10 event-info">
+                                                    <span><b class="etiqueta">Professor</b> Laurindo Zanco Furquim</span><br>
+                                                    <span><b class="tema">Professor</b> Agenesia</span>
+                                                </p>
+                                            </div>
+                                            <!-- fim demarcador do detalhe o evento -->
+
+                                        </li>
+                                        <!-- fim de separador por tempo -->
+
+                                        <!-- inicio separador por tempo -->
+                                        <li class="periodo-list-tempo">
+
+                                            <!-- marcador de hora -->
+                                           <span class="etiqueta-tempo">08:00 as 09:10</span>
+
+                                           <!-- inicio marcador do detalhe o evento -->
+                                            <div class="event-marca row">
+                                                <span class="col-md-2 glyphicon glyphicon-chevron-right"></span>
+
+                                                <!-- informação -->
+                                                <p class="col-md-10 event-info">
+                                                    <span><b class="etiqueta">Professor</b> Laurindo Zanco Furquim</span><br>
+                                                    <span><b class="tema">Professor</b> Agenesia</span>
+                                                </p>
+                                            </div>
+                                            <!-- fim demarcador do detalhe o evento -->
+
+                                        </li>
+                                        <!-- fim de separador por tempo -->
+
+                                    </ul>
+                                    <!-- fim de Evento detalhado -->
+
+                                </li>
+                                <!-- fim de lista de evento -->
+
+                            </ul>
+                            <!-- fim eventos nesta hora -->
+
+                        </li>
+                        <!-- fim lista temporal -->
+
+                        <!-- inicio lista temporal -->
+                        <li class="periodo-list-tempo">
+
+                            <!-- marcador de hora -->
+                            <span class="etiqueta-tempo">09:00</span>
+
+                            <!-- eventos nesta hora -->
+                            <ul class="event-list">
+
+                                <!-- lista de evento -->
+                                <li class="event-list-item">
+
+                                    <!-- marcador do evento -->
+                                    <div class="event-marca row">
+                                        <p class="local auditorio col-md-2 label label-default">Clínica</p>
+                                        <p class="col-md-9">Farmacologia Clinica para Cirurgiões-Dentistas</p>
+                                        <p class="col-md-1 btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></p>
+                                    </div>
+
+                                    <!-- fim Evento detalhado -->
+                                    <ul class="event-detalhado">
+
+                                        <!-- inicio separador por tempo -->
+                                        <li class="periodo-list-tempo">
+
+                                            <!-- marcador de hora -->
+                                           <span class="etiqueta-tempo">08:00 as 09:10</span>
+
+                                           <!-- inicio marcador do detalhe o evento -->
+                                            <div class="event-marca row">
+                                                <span class="col-md-2 glyphicon glyphicon-chevron-right"></span>
+
+                                                <!-- informação -->
+                                                <p class="col-md-10 event-info">
+                                                    <span><b class="etiqueta">Professor</b> Laurindo Zanco Furquim</span><br>
+                                                    <span><b class="tema">Professor</b> Agenesia</span>
+                                                </p>
+                                            </div>
+                                            <!-- fim demarcador do detalhe o evento -->
+
+                                        </li>
+                                        <!-- fim de separador por tempo -->
+
+                                        <!-- inicio separador por tempo -->
+                                        <li class="periodo-list-tempo">
+
+                                            <!-- marcador de hora -->
+                                           <span class="etiqueta-tempo">08:00 as 09:10</span>
+
+                                           <!-- inicio marcador do detalhe o evento -->
+                                            <div class="event-marca row">
+                                                <span class="col-md-2 glyphicon glyphicon-chevron-right"></span>
+
+                                                <!-- informação -->
+                                                <p class="col-md-10 event-info">
+                                                    <span><b class="etiqueta">Professor</b> Laurindo Zanco Furquim</span><br>
+                                                    <span><b class="tema">Professor</b> Agenesia</span>
+                                                </p>
+                                            </div>
+                                            <!-- fim demarcador do detalhe o evento -->
+
+                                        </li>
+                                        <!-- fim de separador por tempo -->
+
+                                    </ul>
+                                    <!-- fim de Evento detalhado -->
+
+                                </li>
+                                <!-- fim de lista de evento -->
+
+                            </ul>
+                            <!-- fim eventos nesta hora -->
+
+                        </li>
+                        <!-- fim lista temporal -->
+
+                        <!-- inicio lista temporal -->
+                       <li class="periodo-list-tempo">
+
+                            <!-- marcador de hora -->
+                            <span class="etiqueta-tempo">10:00</span>
+
+                            <!-- eventos nesta hora -->
+                            <ul class="event-list">
+
+                                <!-- lista de evento -->
+                                <li class="event-list-item">
+
+                                    <!-- marcador do evento -->
+                                    <div class="event-marca row">
+                                        <p class="local auditorio col-md-2 label label-default">Auditorio</p>
+                                        <p class="col-md-9">Farmacologia Clinica para Cirurgiões-Dentistas</p>
+                                        <p class="col-md-1 btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></p>
+                                    </div>
+
+                                    <!-- fim Evento detalhado -->
+                                    <ul class="event-detalhado">
+
+                                        <!-- inicio separador por tempo -->
+                                        <li class="periodo-list-tempo">
+
+                                            <!-- marcador de hora -->
+                                           <span class="etiqueta-tempo">08:00 as 09:10</span>
+
+                                           <!-- inicio marcador do detalhe o evento -->
+                                            <div class="event-marca row">
+                                                <span class="col-md-2 glyphicon glyphicon-chevron-right"></span>
+
+                                                <!-- informação -->
+                                                <p class="col-md-10 event-info">
+                                                    <span><b class="etiqueta">Professor</b> Laurindo Zanco Furquim</span><br>
+                                                    <span><b class="tema">Professor</b> Agenesia</span>
+                                                </p>
+                                            </div>
+                                            <!-- fim demarcador do detalhe o evento -->
+
+                                        </li>
+                                        <!-- fim de separador por tempo -->
+
+                                    </ul>
+                                    <!-- fim de Evento detalhado -->
+
+                                </li>
+                                <!-- fim de lista de evento -->
+
+                            </ul>
+                            <!-- fim eventos nesta hora -->
+
+                        </li>
+                        <!-- fim lista temporal -->
+
+                    </ul>
+                    <!-- fim evento da manha -->
+
+                </div>
+                <!-- fim eventos -->
+
             </div>
+            <!-- fim evento do dia selecionado -->
+
         </div>
         <!-- fim grupo da selação -->
 
