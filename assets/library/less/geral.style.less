@@ -8,7 +8,9 @@ header {
 
     // Configuração do grupo do meu
     nav {
+        border:1px solid #000;
         background-color: black;
+        display: block;
 
         // Botão do menu
         .btn-menu {
@@ -30,6 +32,37 @@ header {
             }
         }
 
+        // Menu principal
+        .menu-principal{
+            width: 30%;
+            min-width: 300px;
+            padding: 20px;
+            margin: 10% auto;
+            background-color: #EBEBEB;
+            display: block;
+
+            // Lista do menu
+            li{
+                border-bottom: 1px solid #b8b8b8;
+                &:last-child, &:last-child:hover{border-bottom: none;}
+                &:hover{border-bottom: 1px solid #b8b8b8;}
+
+                a{
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: black;
+                    font-size: 30px;
+                    padding: 13px 0px;
+
+                    .indicador{
+                        font-size: 0.5em;
+                        display: block;
+                        text-transform: initial;
+                    }
+                    // 0
+                }
+            }
+        }
     }
 }
 
