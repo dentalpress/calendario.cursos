@@ -149,6 +149,85 @@ header {
             }
         }
 
+        // Eventos
+        .eventos{
+            height: 500px;
+            // overflow: hidden;
+            overflow-y: scroll;
+            padding: 5px;
+
+            // Primeiro nivel de lista
+            .periodo-list{
+                &,ul,li, {padding: 0 5px; margin: 0px;list-style: none;}
+                .event-list-item{
+                    padding-top: 15px;
+                    &:first-child{padding-top: 0px}
+                }
+
+                .periodo-list-tempo{
+
+
+                    // linha indicadora
+                    .etiqueta-tempo {
+                        display: block;
+                        margin: 10px;
+                        margin-top: 20px;
+
+                        &:after {
+                            content: '';
+                            border-bottom: 1px solid #CECECE;
+                            display: inline-table;
+                            width: 90%;
+                            text-align: right;
+                            margin-left: 5px;
+                            margin-bottom: 4px!important;
+                        }
+                    }
+
+                    // marcão do evento 
+                    .event-marca{
+
+                        *{margin-bottom: 0px;}
+                        .local{
+                            padding: 6px 8px;
+                            border: none;
+                            border-radius: 0;
+                            font-weight: normal;
+                            text-transform: uppercase;
+                        }
+
+                        // botão para mostar o evento detalhado
+                        .btn-event-show {
+                            border: none;
+                            border-radius: 0px;
+                            font-size: 16px;
+                            padding: 0px;
+                            height: 22px;
+                            width: 32px;
+                            height: 23px;
+                            &.hover, &.active{background-color: #EBEBEB;}
+
+                        }                        
+                    }
+
+                    // detalhe do evento marcado
+                    .event-detalhado{
+                        display: none;
+                        background-color:#EBEBEB;
+                        padding: 10px;
+                        margin-left: -15px;
+                        // *{margin-top: 0px;}
+
+                        // reconfigura a linha indicadora de tempo
+                        .etiqueta-tempo{
+                            margin-top: 0px;
+                            &:after {width: 77%;}
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
     // esconde lista de periodos
