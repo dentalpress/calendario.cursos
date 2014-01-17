@@ -89,53 +89,38 @@ header {
             }
             .menu-principal{ display: block;}
         }
-
     }
 }
 
-// Configuração do topo
-// header{
+// grupo da selação
+.selecao{
+    background-color: inherit;
+    border:none;
+    box-shadow: none;
 
-//     // Configuração do grupo do meu
-//     nav{
-//         // Botão do menu
-//         .btn-menu{
-//             border: 1px solid red;
-//             padding: 10px;
-//             display: inline-block;
+    // indicador do dia selecionado
+    .grupo-dia{
+        width: 30%;
+        text-align: center;
+        text-transform: uppercase;
 
-//             icon-bar.{
-// background-color: rgb(204, 204, 204);
-// border-bottom-left-radius: 1px;
-// border-bottom-right-radius: 1px;
-// border-top-left-radius: 1px;
-// border-top-right-radius: 1px;
-// box-sizing: border-box;
-// color: rgb(0, 0, 0);
-// cursor: pointer;
-// display: block;
-// font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-// font-size: 14px;
-// height: 2px;
-// letter-spacing: normal;
-// line-height: 20px;
-// margin-top: 4px;
-// text-align: center;
-// text-indent: 0px;
-// text-shadow: none;
-// text-transform: none;
-// width: 22px;
-// word-spacing: 0px;
-//             }
+        // zera valores internos do objeto
+        *{margin: 0px; padding: 10px 0px; font-weight: normal; font-family: arial;}
+        .semana{font-size: 40px;}
+        .dia{font-size: 150px;}
+        .mes-ano{font-size: 20px;}
+    }
 
-//         }
-//     }
-// }
-
+    // esconde lista de periodos
+    .periodo-list{
+        // border: 2px solid red;
+        overflow-y: hidden;
+        height: 100px;
+    }
+}
 
 
 // Configura datapicker mês
-
 // tabela de datas
 .datepicker-days{
 
