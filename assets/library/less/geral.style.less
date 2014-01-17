@@ -69,7 +69,7 @@ header {
             top: 0px;
             left: 0;
             width: 100%;
-            z-index: 1;
+           z-index: 1;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.85);
             .btn-menu{
@@ -111,12 +111,48 @@ header {
         .mes-ano{font-size: 20px;}
     }
 
-    // esconde lista de periodos
-    .periodo-list{
-        // border: 2px solid red;
-        overflow-y: hidden;
-        height: 100px;
+    .grupo-evento{
+        // border: 1px solid red;
+        width: 60%;
+        min-height: 350px;
+        min-width: 550px;
+
+        // menu de peiodo
+        .periodo-menu{
+            border: none;
+            margin-bottom: 20px;
+
+            li{
+                border: none;
+                margin: auto 2%;
+                padding: 0 10px;
+                &.active a{
+                    border-bottom: 5px solid red;
+                    &:hover{border-radius: initial;}
+                }
+
+                a{
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    border: none;
+                    text-align: center;
+                    color: black;
+                    &:hover{border-radius: 6px;}
+
+                    .periodo{
+                        display: block;
+                        font-weight: normal;
+                        font-size: 0.6em;
+                    }
+                }
+            }
+        }
+
     }
+
+    // esconde lista de periodos
+
 }
 
 
