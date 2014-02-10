@@ -653,7 +653,7 @@
 
 				clsName = $.unique(clsName);
 				// Cria data +prevMonth.getUTCDate()+'/'+year+'/'+month+
-				html.push('<td data-day=' + prevMonth.getUTCDate()+'-'+month+'-'+year + ' class="'+clsName.join(' ')+'"' + (tooltip ? ' title="'+tooltip+'"' : '') + '>'+prevMonth.getUTCDate() + '</td>');
+				html.push('<td data-day=' + prevMonth.getUTCDate()+'-'+(prevMonth.getUTCMonth() + 1)+'-'+year + ' class="'+clsName.join(' ')+'"' + (tooltip ? ' title="'+tooltip+'"' : '') + '><p class="mes-ano">'+dates[this.o.language].months[prevMonth.getUTCMonth()]+' - '+year+'</p><h2 class="dia">'+prevMonth.getUTCDate() + '</h2></td>');
 				if (prevMonth.getUTCDay() == this.o.weekEnd) {
 					html.push('</tr>');
 				}
