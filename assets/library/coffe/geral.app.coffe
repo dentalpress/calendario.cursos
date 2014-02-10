@@ -1,1 +1,67 @@
 console.log 'oi'
+# Exibindo lista da semana
+
+
+### seleciona itens na lista DOM ###
+# Seleciona datapicker root
+datapicker_rot = $('.datepicker-days')
+
+#Seleciona tbody de dias
+body_dia = datapicker_rot.find("tbody")
+
+#Seleciona Lista Tr de semana
+semana_dia = body_dia.find("tr")
+
+#Conta semanas
+semana_dia_cont = semana_dia.size()
+
+# Seleciona botão de navegação por semana
+#proximo
+semana_dia_btn_next = $('.navegation').find('.pull-right')
+#anterior
+semana_dia_btn_prev = $('.navegation').find('.pull-left')
+
+
+########################################
+#### Função de naveção por semanas ####
+
+#removo class show existente
+semana_dia.removeClass('show')
+
+#crio posição atual
+semana_dia_position_atual = 0
+
+semana_dia.eq(semana_dia_position_atual).addClass('show')
+
+
+#quando clicar em proximo
+semana_dia_btn_next.click ->
+  #caso a posição atual seja menor que o total
+  if semana_dia_position_atual < (semana_dia_cont - 2)
+
+    #acrecenta um paraa posição atual
+    semana_dia_position_atual+++
+
+    #removo class show existente
+    semana_dia.removeClass('show')
+
+    #acrecento a classe show para a semana na posição atual
+    semana_dia.eq(semana_dia_position_atual).addClass('show')
+
+
+
+#quando clicar em proximo
+semana_dia_btn_prev.click ->
+  #caso a posição atual seja menor que o total
+  if semana_dia_position_atual >= 1
+
+    #acrecenta um paraa posição atual
+    semana_dia_position_atual---
+
+    #removo class show existente
+    semana_dia.removeClass('show')
+
+    #acrecento a classe show para a semana na posição atual
+    semana_dia.eq(semana_dia_position_atual).addClass('show')
+
+
