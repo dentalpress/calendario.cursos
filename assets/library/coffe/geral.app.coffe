@@ -2,7 +2,7 @@ console.log 'oi'
 
 ########################################################
 ##################### FUNÇÕES ##########################
-
+##############
 #Função adiciona classe a semana
 select_semana = (classe, semana_nun) ->
 
@@ -36,7 +36,21 @@ select_semana = (classe, semana_nun) ->
 
   #remove a classe day do html
   dia.removeClass('day')
-    
+  dia.addClass('dia')
+
+
+##############
+#conto se qual a posição atual
+reposicionaDia = (classe, semana_nun) ->
+  semana = $('.datepicker-days').find("tbody tr")
+  a = 0
+  val = 0
+  while a < semana_nun
+    if semana.eq(a).find('td').hasClass(classe)
+      val = a     
+
+    a++
+  return val
 ##################### FUNÇÕES ##########################
 ########################################################
 
@@ -73,7 +87,8 @@ semana_btn_navg = semana_btn_prev.semana_btn_prev
 semana.removeClass('show')
 
 #crio posição atual
-semana_position_atual = 0
+semana_position_atual = reposicionaDia "today", semana_cont
+
 
 #Define padrões antes dos eventos
 semana.eq(semana_position_atual).addClass('show')
@@ -84,6 +99,7 @@ select_semana "today", semana_position_atual
 select_semana "old", semana_position_atual
 select_semana "new", semana_position_atual
 select_semana "disabled", semana_position_atual
+
 
 
 #quando clicar em proximo
@@ -129,3 +145,9 @@ semana_btn_prev.click ->
     select_semana "old", semana_position_atual
     select_semana "new", semana_position_atual
     select_semana "disabled", semana_position_atual
+
+#quando clicar no dia adiciona active
+$('.dia').click ->
+  $('.dia').removeClass('active')
+  $(this).addClass('active')
+  select_semana "active", semana_position_atual
