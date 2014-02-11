@@ -29,11 +29,13 @@ select_semana = (classe, semana_nun) ->
 
   while b <= 7
     if dia.eq(b).hasClass(classe)
-
       #adiciono ao titulo da semana a mesma classe da semana
       semana_nome.eq(b).addClass(classe)
       # b = 8
     b++
+
+  #remove a classe day do html
+  dia.removeClass('day')
     
 ##################### FUNÇÕES ##########################
 ########################################################
