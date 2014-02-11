@@ -146,8 +146,12 @@ semana_btn_prev.click ->
     select_semana "new", semana_position_atual
     select_semana "disabled", semana_position_atual
 
+
+#dias da semana
+dia_semana = semana.eq(semana_position_atual).find('td.dia')
+
 #quando clicar no dia adiciona active
-$('.dia').click ->
-  $('.dia').removeClass('active')
+$('td').click ->
+  $('td').removeClass('active')
   $(this).addClass('active')
   select_semana "active", semana_position_atual
